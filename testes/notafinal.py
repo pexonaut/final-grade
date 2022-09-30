@@ -1,4 +1,5 @@
-### Calculadora de pontos 1° trimestre
+import heapq
+# Calculadora de pontos 1° trimestre
 
 g1 = int(input("Nota da g1: "))
 g2 = int(input("Nota da g2: "))
@@ -8,21 +9,14 @@ pe = int(input("Pontos extras e diversificadas: "))
 #Pegar as duas notas maiores-
     
 #Maior nota:
-nt1 = g1
-if g2 > nt1:
-  nt1 = g2
-if g3 > nt1:
-  nt1 = g3
+lista1 = [g1, g2, g3]
+nt1 = max(lista1)
 
 #Segunda maior nota:
-nt2 = g1
-if (nt2 > g2) <= nt1:
-  nt2 = g2
-elif (nt2 > g3) <= nt1:
-  nt2 = g3
+nt2 = (heapq.nlargest(2, lista1)[-1])
 
 #Média entre elas/soma de pontos-
-mdp = (nt1 + nt2)/2 + pe
+mdp = round((nt1 + nt2)/2) + pe
 
 #Calcular outro trimestre-
 escolha = str(input('''Deseja adicionar outro trimestre? 
@@ -36,21 +30,15 @@ if escolha == "S":
         globo3 = int(input("Nota da g3: "))
         pxe = int(input("Pontos extras e diversificadas: "))
         
-        #Maior e segundo maior
-        nota1 = globo1
-        if globo2 > nota1:
-            nota1 = globo2
-        if globo3 > nota1:
-            nota1 = globo3
-            
-        nota2 = globo1
-        if (nota2 > globo2) <= nota1:
-            nota2 = globo2
-        elif (nota2 > globo3) <= nota1:
-            nota2 = globo3
+        #Maior nota:
+        lista2 = [globo1, globo2, globo3]
+        nota1 = max(lista2)
+
+        #Segunda maior nota:
+        nota2 = (heapq.nlargest(2, lista1)[-1])
         
         #Média entre elas/soma de pontos-
-        media = ((nota1 + nota2)/2) + pxe
+        media = round((nota1 + nota2)/2) + pxe
         
         #Calcular quantos pontos faltam para passar de ano
         ptf = 180 - (media + mdp)
