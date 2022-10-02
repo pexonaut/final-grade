@@ -1,3 +1,4 @@
+from tkinter import *
 import heapq
 # Calculadora de pontos 1° trimestre
 
@@ -64,3 +65,23 @@ Você esta abaixo da média ): Continue estudando!'''.format(mdp))
 else:
     print('''A média final do aluno(a) foi de [{}] pontos no trimestre 
 Você esta acima da media, continue assim! '''.format(mdp))
+
+#Parte grafica (fodeu)
+
+janela = Tk()#mainloop
+janela.title("Calculadora de Médias Colegio Anchieta")
+#janela.geometry("500x400") Comprimento da Janela
+
+texto_orientacao = Label(janela, text = '''Digite suas notas e a soma de suas 
+diversificadas e pontos extras''')
+texto_orientacao.grid(column=0, row=0) #Adicionar dps padx e pady, mudar a coluna
+
+texto_orientacao2 = Label(janela, text = "Digite as suas notas")
+texto_orientacao2.grid(column=0, row=1) #Adicionar dps padx e pady, mudar a coluna
+
+texto_entrada = Entry(janela, width=50, bg="white", fg="black")
+texto_entrada.grid(column=0, row=3) #Adicionar dps padx e pady, mudar a coluna
+
+
+janela.mainloop()#mainloop
+
