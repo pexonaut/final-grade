@@ -1,5 +1,5 @@
 import heapq
-# Calculadora de pontos 1° trimestre
+# Calculadora de pontos 1° trimestre    
 
 g1 = int(input("Nota da g1: "))
 g2 = int(input("Nota da g2: "))
