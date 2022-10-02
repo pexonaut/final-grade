@@ -43,12 +43,12 @@ if escolha == "S":
         # Calcular quantos pontos faltam para passar de ano
         ptf = 180 - (media + mdp)
         print("-" * 10)  # Pra deixar bonitinho
-        
+
         if ptf <= 0:
             print('''Media do 1° trimestre: {}
 Media do 2° trimestre: {}
 Você já passou de ano, parabéns!'''.format(mdp, media))
-        
+
         else:
             print('''Media do 1° trimestre: {}
 Media do 2° trimestre: {}
@@ -56,7 +56,7 @@ Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
 
         break
 
-#Somente o primeiro trimestre
+# Somente o primeiro trimestre
 elif mdp < 60:
     print('''A média final do aluno(a) foi de [{}] pontos no trimestre 
 Você esta abaixo da média ): Continue estudando!'''.format(mdp))
