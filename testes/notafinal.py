@@ -1,9 +1,4 @@
-import sqlite3
 import heapq
-
-# Database start *
-con = sqlite3.connect('notas_anchieta.db')
-cursor = con.cursor()
 
 # Calculadora de pontos 1° trimestre
 
