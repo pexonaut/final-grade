@@ -1,6 +1,8 @@
 from genericpath import exists
 import heapq
 import sqlite3
+import time
+import biblioteca_funções
 
 # Database
 conexao = sqlite3.connect('banco_de_dados_anchieta.db')
@@ -70,13 +72,9 @@ Fisica [6]''')
 
             if ptf <= 0:
                 ptf = "passou"
-                print('''\033[32mMedia do 1° trimestre: {}
-Media do 2° trimestre: {}
-Você já passou de ano, parabéns!'''.format(mdp, media))
+                print('''\033[32mMedia do 1° trimestre: {}\n Media do 2° trimestre: {}\n Você já passou de ano, parabéns!'''.format(mdp, media))
             else:
-                print('''\033[31mMedia do 1° trimestre: {}
-Media do 2° trimestre: {}
-Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
+                print('''\033[31mMedia do 1° trimestre: {}\n Media do 2° trimestre: {}\n Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
                 ptf = "Não passou"
         else:
             print("Opção Invalida")
@@ -107,7 +105,7 @@ Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
             else:
                 cursor.execute(
                     f"INSERT INTO Fisica VALUES ('{nt1}', '{nt2}', '{mdp}', '{nota1}', '{nota2}', '{media}', '{ptf}')")
-                conexao.commit()
+                conexao.commit()    
 
             print(
                 '\033[35m!!!!Aguarde o programa encerrar se você preza pelo seus dados!!!!\033[m')
@@ -118,19 +116,8 @@ Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
 if inserir_menu == ver_notas:
     while True:
         print("Carregando 'banco_de_dados_anchieta'...")
-        
-        
-        ton = cursor.execute("SELECT COUNT(*) FROM matematica")
-        ton.fetchall()
-#         if ton > 0:
-#             print_mat = cursor.execute("SELECT * FROM matematica")
-#             m_nt1, m_nt2, m_mdp, m_nota1, m_nota2, m_media, m_ponto_final = print_mat.fetchone()
-#             print(f'''Matematica:
-# Notas do 1° trimestre: {m_nt1}, {m_nt2}
-# Média: {m_mdp}
-# Notas do 2° trimestre: {m_nota1}, {m_nota2}
-# Média: {m_media}
-# Situação final: {m_ponto_final}''')
-#         else: print("Matematica: Sem notas disponiveis")
+        time.sleep(3)
+    
+
 
         break
