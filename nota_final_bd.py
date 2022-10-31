@@ -2,6 +2,7 @@ from genericpath import exists
 import heapq
 import sqlite3
 import time
+from typing import final
 import biblioteca_funções
 
 # Database
@@ -25,7 +26,7 @@ Geografia [2]
 Historia [3]
 Português [4]
 Quimica [5]
-Fisica [6]''')
+Fisica [6]\033[m''')
 
         materia_mat = 1
         materia_geo = 2
@@ -34,8 +35,7 @@ Fisica [6]''')
         materia_qui = 5
         materia_fis = 6
 
-        materia_escolhida = int(
-            input("Escolha a materia calculada (Precisa ser um numero): "))
+        materia_escolhida = int(input("Escolha a materia calculada (Precisa ser um numero): "))
 
         if ((materia_escolhida > 0) and (materia_escolhida <= 6)):
 
@@ -72,9 +72,9 @@ Fisica [6]''')
 
             if ptf <= 0:
                 ptf = "passou"
-                print('''\033[32mMedia do 1° trimestre: {}\n Media do 2° trimestre: {}\n Você já passou de ano, parabéns!'''.format(mdp, media))
+                print('''\033[32mMedia do 1° trimestre: {}\nMedia do 2° trimestre: {}\nVocê já passou de ano, parabéns!'''.format(mdp, media))
             else:
-                print('''\033[31mMedia do 1° trimestre: {}\n Media do 2° trimestre: {}\n Faltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
+                print('''\033[31mMedia do 1° trimestre: {}\nMedia do 2° trimestre: {}\nFaltam {} pontos para passar de ano!'''.format(mdp, media, ptf))
                 ptf = "Não passou"
         else:
             print("Opção Invalida")
@@ -113,11 +113,67 @@ Fisica [6]''')
         break
 
 # Visualizar Notas
-if inserir_menu == ver_notas:
+elif inserir_menu == ver_notas:
     while True:
-        print("Carregando 'banco_de_dados_anchieta'...")
-        time.sleep(3)
-    
+        print('''\033[33mMatematica [1]
+Geografia [2]
+Historia [3]
+Português [4]
+Quimica [5]
+Fisica [6]''')
+        
+        materia_mat = 1
+        materia_geo = 2
+        materia_hist = 3
+        materia_port = 4
+        materia_qui = 5
+        materia_fis = 6
+        materia_escolhida = int(input("Escolha a materia que vai ser visualizada (Precisa ser um numero): "))
 
+        if ((materia_escolhida > 0) and (materia_escolhida <= 6)):
+            while True:
 
+                print("-" * 28)  # Pra deixar bonitinho
+
+                print("\033[35mCarregando 'banco_de_dados_anchieta'\033[m")
+                time.sleep(2)
+                
+
+                print("Modelo para visualização de dados:\n('nota1, nota 2, media 1° trimestre', 'nota1, 2 e media do 2° trimestre e situação final')")
+                print(" ")
+                if materia_escolhida == materia_mat:
+                  for row in cursor.execute("SELECT * FROM Matematica"):
+                         print("-" * 28)
+                         print(row)
+                
+                elif materia_escolhida == materia_geo:
+                    for row in cursor.execute("SELECT * FROM Geografia"):
+                        print("-" * 28)
+                        print(row)
+
+                elif materia_escolhida == materia_hist:
+                    for row in cursor.execute("SELECT * FROM Historia"):
+                        print("-" * 28)
+                        print(row)
+
+                elif materia_escolhida == materia_port:
+                    for row in cursor.execute("SELECT * FROM Português"):
+                        print("-" * 28)
+                        print(row)
+
+                elif materia_escolhida == materia_qui:
+                    for row in cursor.execute("SELECT * FROM Quimica"):
+                        print("-" * 28)
+                        print(row)
+
+                else:
+                    for row in cursor.execute("SELECT * FROM Fisica"):
+                        print("-" * 28)
+                        print(row)
+
+                break
+        
+        else:
+            print("Opção invalida ):")
+        
         break

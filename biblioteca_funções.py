@@ -1,4 +1,5 @@
 import heapq
+from sqlite3 import Cursor
 
 def calcular_notas(g1, g2, g3, pe, globo1, globo2, globo3, pxe):
     
@@ -25,3 +26,6 @@ def calcular_notas(g1, g2, g3, pe, globo1, globo2, globo3, pxe):
     ptf = 180 - (media + mdp)
 
     return nt1, nt2, mdp, nota1, nota2, media, ptf
+
+def dados_Mat():
+    cursor.execute
