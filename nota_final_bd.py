@@ -7,8 +7,7 @@ import biblioteca_funções
 conexao = sqlite3.connect('banco_de_dados_anchieta.db')
 cursor = conexao.cursor()
 
-print('''\033[34mCalcular notas [1]
-Ver notas e médias [2]\033[m''')
+print('\033[34mCalcular notas [1]\nVer notas e médias [2]\033[m')
 inserir_menu = int(input("Selecione a ação desejada: "))
 calcular_notas = 1
 ver_notas = 2
@@ -17,12 +16,7 @@ ver_notas = 2
 if inserir_menu == calcular_notas:
     while True:
         print("-" * 28)
-        print('''\033[33mMatematica [1]
-Geografia [2]
-Historia [3]
-Português [4]
-Quimica [5]
-Fisica [6]''')
+        print('\033[33mMatematica [1]\nGeografia [2]\nHistoria [3]\nPortuguês [4]\nQuimica [5]\nFisica [6]')
 
         materia_mat = 1
         materia_geo = 2
@@ -110,12 +104,7 @@ Fisica [6]''')
 else:
     while True:
         print("-" * 28)  
-        print('''\033[33mMatematica [1]
-Geografia [2]
-Historia [3]
-Português [4]
-Quimica [5]
-Fisica [6]\033[m''')
+        print('\033[33mMatematica [1]\nGeografia [2]\nHistoria [3]\nPortuguês [4]\nQuimica [5]\nFisica [6]\033[m')
         
         materia_mat = 1
         materia_geo = 2
