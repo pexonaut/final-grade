@@ -37,7 +37,7 @@ def main():
                 g1 = int(input("Nota da g1: "))
                 g2 = int(input("Nota da g2: "))
                 g3 = int(input("Nota da g3: "))
-                
+
                 p1 = int(input("Diversificada: "))
                 p2 = int(input("Pontos extras: "))
 
@@ -51,12 +51,12 @@ def main():
                 globo1 = int(input("Nota da g1: "))
                 globo2 = int(input("Nota da g2: "))
                 globo3 = int(input("Nota da g3: "))
-                
+
                 px1 = int(input("Diversificadas: "))
                 px2 = int(input("Pontos extras: "))
 
                 lista2 = [globo1, globo2, globo3]
-                
+
                 pxe = px1 + px2
                 nota1 = max(lista2)
                 nota2 = (heapq.nlargest(2, lista2)[-1])
