@@ -1,8 +1,6 @@
 import heapq
 import sqlite3
 import time
-import biblioteca_funções
-
 
 def main():
     conexao = sqlite3.connect('banco_de_dados_anchieta.db')
@@ -75,6 +73,22 @@ def main():
                     print('''\033[31mMedia do 1° trimestre: {}\nMedia do 2° trimestre: {}\nFaltam {} pontos para passar de ano!'''.format(
                         mdp, media, ptf))
                     rapariga = "não passou"
+
+                # criar as tabelas
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Matematica" ("m_nt1" NUMERIC, "m_nt2" NUMERIC, "m_mdp" NUMERIC, "m_nota1" NUMERIC, "m_nota2" NUMERIC, "m_media" NUMERIC, "rapariga" INTEGER, "m_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Geografia" ("g_nt1" NUMERIC, "g_nt2" NUMERIC, "g_mdp" NUMERIC, "g_nota1" NUMERIC, "g_nota2" NUMERIC, "g_media" NUMERIC, "rapariga" INTEGER, "g_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Historia" ("h_nt1" NUMERIC, "h_nt2" NUMERIC, "h_mdp" NUMERIC, "h_nota1" NUMERIC, "h_nota2" NUMERIC, "h_media" NUMERIC,"rapariga" INTEGER, "h_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Português" ("p_nt1" NUMERIC, "p_nt2" NUMERIC, "p_mdp" NUMERIC, "p_nota1" NUMERIC, "p_nota2" NUMERIC, "p_media" NUMERIC,"rapariga" INTEGER, "p_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Quimica" ("q_nt1" NUMERIC, "q_nt2" NUMERIC, "q_mdp" NUMERIC, "q_nota1" NUMERIC, "q_nota2" NUMERIC, "q_media" NUMERIC,"rapariga" INTEGER, "q_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Fisica" ("f_nt1" NUMERIC, "f_nt2" NUMERIC, "f_mdp" NUMERIC, "f_nota1" NUMERIC, "f_nota2" NUMERIC, "f_media" NUMERIC,"rapariga" INTEGER, "f_pf" NUMERIC)')
+                cursor.execute(
+                    'CREATE TABLE IF NOT EXISTS "Biologia" ("b_nt1" NUMERIC, "b_nt2" NUMERIC, "b_mdp" NUMERIC, "b_nota1" NUMERIC, "b_nota2" NUMERIC, "b_media" NUMERIC,"rapariga" INTEGER, "b_pf" NUMERIC)')
 
             else:
                 print("\033[31mOpção Invalida\033[m")
@@ -156,6 +170,23 @@ def main():
 
                     print("\033[35mCarregando 'banco_de_dados_anchieta'\033[m")
                     print(' ')
+
+                    # criar as tabelas
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Matematica" ("m_nt1" NUMERIC, "m_nt2" NUMERIC, "m_mdp" NUMERIC, "m_nota1" NUMERIC, "m_nota2" NUMERIC, "m_media" NUMERIC, "rapariga" INTEGER, "m_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Geografia" ("g_nt1" NUMERIC, "g_nt2" NUMERIC, "g_mdp" NUMERIC, "g_nota1" NUMERIC, "g_nota2" NUMERIC, "g_media" NUMERIC, "rapariga" INTEGER, "g_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Historia" ("h_nt1" NUMERIC, "h_nt2" NUMERIC, "h_mdp" NUMERIC, "h_nota1" NUMERIC, "h_nota2" NUMERIC, "h_media" NUMERIC,"rapariga" INTEGER, "h_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Português" ("p_nt1" NUMERIC, "p_nt2" NUMERIC, "p_mdp" NUMERIC, "p_nota1" NUMERIC, "p_nota2" NUMERIC, "p_media" NUMERIC,"rapariga" INTEGER, "p_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Quimica" ("q_nt1" NUMERIC, "q_nt2" NUMERIC, "q_mdp" NUMERIC, "q_nota1" NUMERIC, "q_nota2" NUMERIC, "q_media" NUMERIC,"rapariga" INTEGER, "q_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Fisica" ("f_nt1" NUMERIC, "f_nt2" NUMERIC, "f_mdp" NUMERIC, "f_nota1" NUMERIC, "f_nota2" NUMERIC, "f_media" NUMERIC,"rapariga" INTEGER, "f_pf" NUMERIC)')
+                    cursor.execute(
+                        'CREATE TABLE IF NOT EXISTS "Biologia" ("b_nt1" NUMERIC, "b_nt2" NUMERIC, "b_mdp" NUMERIC, "b_nota1" NUMERIC, "b_nota2" NUMERIC, "b_media" NUMERIC,"rapariga" INTEGER, "b_pf" NUMERIC)')
+
                     time.sleep(2)
 
                     print(
