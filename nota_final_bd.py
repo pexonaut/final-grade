@@ -26,7 +26,7 @@ def main():
                 materia_escolhida = int(materia_escolhida)
 
                 if ((materia_escolhida <= 7) and (materia_escolhida > 0)):
-                    
+
                     materia_mat = 1
                     materia_geo = 2
                     materia_hist = 3
@@ -42,6 +42,28 @@ def main():
 
                         if g1.isdigit():
                             g1 = int(g1)
+
+                            while True:
+
+                                if ((g1 > 80) or (g1 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
+
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -63,6 +85,27 @@ def main():
 
                         if g2.isdigit():
                             g2 = int(g2)
+
+                            while True:
+
+                                if ((g2 > 80) or (g2 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -84,6 +127,27 @@ def main():
 
                         if g3.isdigit():
                             g3 = int(g3)
+
+                            while True:
+
+                                if ((g3 > 80) or (g3 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -105,6 +169,28 @@ def main():
 
                         if p1.isdigit():
                             p1 = int(p1)
+
+                            while True:
+
+                                if ((p1 > 20) or (p1 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
+
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -156,6 +242,27 @@ def main():
 
                         if globo1.isdigit():
                             globo1 = int(globo1)
+
+                            while True:
+
+                                if ((globo1 > 80) or (globo1 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -177,6 +284,27 @@ def main():
 
                         if globo2.isdigit():
                             globo2 = int(globo2)
+
+                            while True:
+
+                                if ((globo2 > 80) or (globo2 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -198,6 +326,27 @@ def main():
 
                         if globo3.isdigit():
                             globo3 = int(globo3)
+
+                            while True:
+
+                                if ((globo3 > 80) or (globo3 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -219,6 +368,27 @@ def main():
 
                         if px1.isdigit():
                             px1 = int(px1)
+
+                            while True:
+
+                                if ((px1 > 20) or (px1 < 0)):
+
+                                    print("\033[31mOpção Invalida\033[m")
+                                    repe = input(
+                                        "\033[35mDeseja voltar para o 1° trimestre? [S/N]\033[m").upper()
+
+                                    if repe == "S":
+                                        calcular_notas()
+
+                                    else:
+                                        repe = input(
+                                            "\033[35mDeseja voltar para o menu principal? [S/N]\033[m").upper()
+                                        if repe == "S":
+                                            main()
+                                        else:
+                                            print("Programa encerrado :(")
+                                            exit()
+                                break
                         else:
                             print("\033[31mOpção Invalida\033[m")
                             repe = input(
@@ -279,6 +449,8 @@ def main():
 
                         repe = input(
                             "\033[35mDeseja confirmar essas notas? [S/N]\033[m").upper()
+
+                        time.sleep(1)
 
                         if repe == "S":
                             print("\033[32mNotas salvas com sucesso!!\033[m")
@@ -379,12 +551,12 @@ def main():
                     else:
                         print("Programa encerrado :(")
                         exit()
-            
+
             else:
                 print("\033[31mOpção Invalida\033[m")
 
                 repe = input(
-                        "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
+                    "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
 
                 if repe == "S":
                     main()
@@ -442,36 +614,108 @@ def main():
                         'CREATE TABLE IF NOT EXISTS "Biologia" ("b_nt1" NUMERIC, "b_nt2" NUMERIC, "b_mdp" NUMERIC, "b_nota1" NUMERIC, "b_nota2" NUMERIC, "b_media" NUMERIC,"rapariga" INTEGER, "b_pf" NUMERIC)')
 
                     time.sleep(2)
-
-                    print(
-                        "\033[33mModelo para visualização de dados:\n('Média do 1° tri', 'Média do 2° tri', 'Situação final', 'Pontos para passar')")
-                    print(' ')
-                    print('---Notas---\033[m')
+                    print('-Notas-\033[m')
 
                     if materia_escolhida == materia_mat:
                         for row in cursor.execute("SELECT m_mdp, m_media, rapariga, m_pf FROM Matematica"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     elif materia_escolhida == materia_geo:
                         for row in cursor.execute("SELECT g_mdp, g_media, rapariga, g_pf FROM Geografia"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     elif materia_escolhida == materia_hist:
                         for row in cursor.execute("SELECT h_mdp, h_media, rapariga, h_pf FROM Historia"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     elif materia_escolhida == materia_port:
                         for row in cursor.execute("SELECT p_mdp, p_media, rapariga, p_pf FROM Português"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     elif materia_escolhida == materia_qui:
                         for row in cursor.execute("SELECT q_mdp, q_media, rapariga, q_pf FROM Quimica"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     elif materia_escolhida == materia_fis:
                         for row in cursor.execute("SELECT f_mdp, f_media, rapariga, f_pf FROM Fisica"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
+
                     else:
                         for row in cursor.execute("SELECT b_mdp, b_media, rapariga, b_pf FROM Biologia"):
-                            print(row)
+
+                            print("-" * 28)
+                            if row[3] > 0:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[31m{}\033[m
+\033[33mFaltam\033[m \033[31m{}\033[m \033[33mpontos pra passar!\033[m'''.format(row[0], row[1], row[2], row[3]))
+                            else:
+                                print('''\033[33mMédia do 1° trimestre: {}
+Média do 2° trimestre: {}
+Situação final: \033[32m{}\033[m'''.format(row[0], row[1], row[2], row[3]))
 
                     repe = input(
-                            "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
+                        "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
 
                     if repe == "S":
                         main()
@@ -484,7 +728,7 @@ def main():
                     print("\033[31mOpção Invalida\033[m")
 
                     repe = input(
-                            "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
+                        "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
 
                     if repe == "S":
                         main()
@@ -492,12 +736,12 @@ def main():
                     else:
                         print("Programa encerrado :(")
                         exit()
-            
+
             else:
                 print("\033[31mOpção Invalida\033[m")
 
                 repe = input(
-                        "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
+                    "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
 
                 if repe == "S":
                     main()
@@ -512,7 +756,7 @@ def main():
         print("\033[31mOpção Invalida\033[m")
 
         repe = input(
-                "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
+            "\033[35mDeseja voltar ao menu principal? [S/N]\033[m").upper()
 
         if repe == "S":
             main()
